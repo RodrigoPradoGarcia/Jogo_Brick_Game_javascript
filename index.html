@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="index.css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brick Breaker</title>
+</head>
+<body>
+  
+  <div style="display:flex;flex-direction:column;justify-content:center;align-items:center;margin-top:30px">
+    <div style="display:flex;justify-content:center;align-items:center">
+      <h2 style="margin-bottom:20px;margin-right:30px;">Score:<span id="score">0</span></h2>
+      <h2 style="margin-bottom:20px;">Max Score:<span id="maxScore">0</span></h2>
+    </div>
+    <canvas width=500 height=500 id="canvas" class="canvas">
+      O Canvas não foi renderizado
+    </canvas>
+    <button class="btn" class="d-none" style="margin-bottom:50px" id="reiniciar" onclick="reiniciar()">Iniciar</button>
+  </div>
+
+  <script src="./src/classes/math/Matrix.js"></script>
+  <script src="./src/classes/math/Collision.js"></script>
+  <script src="./src/classes/shapes/Point.js"></script>
+  <script src="./src/classes/shapes/Line.js"></script>
+  <script src="./src/classes/shapes/SquareCollision.js"></script>
+  <script src="./src/classes/shapes/Circle.js"></script>
+  <script src="./src/components/Bola.js"></script>
+  <script src="./src/components/Bloco.js"></script>
+  <script src="./src/components/Plataforma.js"></script>
+  <script src="./src/components/Canvas.js"></script>
+  <script src="./src/index.js"></script>
+</body>
+</html>
